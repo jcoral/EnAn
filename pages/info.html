@@ -1,7 +1,11 @@
 <!DOCTYPE html><html lang="en"><head>    <!-- Standard Meta -->    <meta charset="utf-8">    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">    <!-- Site Properties -->    <title></title>    <link rel="stylesheet" type="text/css" href="semantic/dist/components/reset.css">    <link rel="stylesheet" type="text/css" href="semantic/dist/components/site.css">    <link rel="stylesheet" type="text/css" href="semantic/dist/components/container.css">    <link rel="stylesheet" type="text/css" href="semantic/dist/components/grid.css">    <link rel="stylesheet" type="text/css" href="semantic/dist/components/header.css">    <link rel="stylesheet" type="text/css" href="semantic/dist/components/image.css">    <link rel="stylesheet" type="text/css" href="semantic/dist/components/menu.css">    <link rel="stylesheet" type="text/css" href="semantic/dist/components/table.min.css">    <link rel="stylesheet" type="text/css" href="semantic/dist/components/segment.css">    <link rel="stylesheet" type="text/css" href="semantic/dist/components/button.css">    <link rel="stylesheet" type="text/css" href="semantic/dist/components/list.css">    <link rel="stylesheet" type="text/css" href="semantic/dist/components/dropdown.min.css">    <link rel="stylesheet" type="text/css" href="semantic/dist/components/modal.css">    <script src="semantic/jquery.min.js"></script>    <script src="semantic/dist/semantic.min.js"></script>    <script src="semantic/dist/components/transition.js"></script>    <script src="semantic/dist/components/dropdown.min.js"></script>    <script src="semantic/dist/components/modal.min.js"></script>
     <style>
         * {
-            text-align: center;
+            text-align: left;
+
+        }
+        p, p>a{
+            font-size: medium;
         }
 
         table {
@@ -24,28 +28,13 @@
         <a href="total-2-1.html" class="item active">英语二</a>
         <div class="menu right">
             <a href="info.html" class="item active">说明</a>
-            <a class="item active" id="download">下载</a>
+            <a class="item" href="download.html" id="download">下载</a>
         </div>
     </div></div>
-<div class="out-container page-width">
-    <table class="ui celled table">
-        <thead>
-        <tr>
-            <th>未消除简单词</th>
-            <th>消除简单粗暴</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td><a href="files/en_origin1.pdf">英语一</a></td>
-            <td><a href="files/en_1.pdf">英语一</a></td>
-        </tr>
-        <tr>
-            <td><a href="files/en_origin2.pdf">英语二</a></td>
-            <td><a href="files/en_2.pdf">英语二</a></td>
-        </tr>
-        </tbody>
-    </table>
+<div class="out-container page-width" style="margin-top: 100px;">
+    <p>单词得分计算为：每一年的按出现的次数，而近五年的按在当年出现文章中的TF</p>
+    <p>去掉的无意义的词：<a href="https://github.com/jcoral/EnAn/blob/master/main/stopwords.txt">查看</a></p>
+    <p>去掉的简单词为：<a href="https://github.com/jcoral/EnAn/blob/master/main/easyword.txt">查看</a></p>
 </div>
 
 </body></html>
