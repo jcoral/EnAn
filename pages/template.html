@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Standard Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <!-- Site Properties -->
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="semantic/dist/components/reset.css">
+    <link rel="stylesheet" type="text/css" href="semantic/dist/components/site.css">
+
+    <link rel="stylesheet" type="text/css" href="semantic/dist/components/container.css">
+    <link rel="stylesheet" type="text/css" href="semantic/dist/components/grid.css">
+    <link rel="stylesheet" type="text/css" href="semantic/dist/components/header.css">
+    <link rel="stylesheet" type="text/css" href="semantic/dist/components/image.css">
+    <link rel="stylesheet" type="text/css" href="semantic/dist/components/menu.css">
+
+    <link rel="stylesheet" type="text/css" href="semantic/dist/components/table.min.css">
+    <link rel="stylesheet" type="text/css" href="semantic/dist/components/segment.css">
+    <link rel="stylesheet" type="text/css" href="semantic/dist/components/button.css">
+    <link rel="stylesheet" type="text/css" href="semantic/dist/components/list.css">
+    <link rel="stylesheet" type="text/css" href="semantic/dist/components/dropdown.min.css">
+
+    <script src="semantic/jquery.min.js"></script>
+    <script src="semantic/dist/semantic.min.js"></script>
+    <script src="semantic/dist/components/transition.js"></script>
+    <script src="semantic/dist/components/dropdown.min.js"></script>
+
+    <style>
+        .page-width{
+            width: 1024px;
+        }
+        .out-container{
+            margin: 0 auto;
+        }
+
+        .nav{
+            -webkit-border-radius:0px;
+            -moz-border-radius:0px;
+            border-radius:0px;
+            width: 100%;
+            height: auto;
+            background: black;
+            text-align: center;
+        }
+
+        .bottom {
+            text-align: center;
+            margin-bottom: 100px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="nav">
+    <div class="ui inverted large menu page-width" style="margin: 0px auto;">
+        <a href="${navhref0}" class="item ${itemactive0}">全部</a>
+        <a href="${navhref1}" class="item ${itemactive1}">2013</a>
+        <a href="${navhref2}" class="item ${itemactive2}">2014</a>
+        <a href="${navhref3}" class="item ${itemactive3}">2015</a>
+        <a href="${navhref4}" class="item ${itemactive4}">2016</a>
+        <a href="${navhref5}" class="item ${itemactive5}">2017</a>
+        <a class="item"></a>
+        <a class="item"></a>
+        <a href="total-1-1.html" class="item ${entype1}">英语一</a>
+        <a href="total-2-1.html" class="item ${entype2}">英语二</a>
+        <div class="menu right">
+            <a href="download.html" class="item" id="download">下载</a>
+        </div>
+    </div>
+</div>
+<div class="out-container page-width">
+    ${content}
+    <div class="page-width bottom">
+        ${splitpages}
+        <!--<div class="ui buttons">-->
+            <!--<button class="ui left labeled icon button"><i class="left arrow icon"></i> 上一页 </button>-->
+            <!--<button class="ui button">One</button>-->
+            <!--<button class="ui button">Two</button>-->
+            <!--<button class="ui button">Three</button>-->
+            <!--<button class="ui right labeled icon button"><i class="right arrow icon"></i> 下一页 </button>-->
+        <!--</div>-->
+    </div>
+</div>
+</body>
+</html>
